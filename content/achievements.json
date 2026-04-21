@@ -1,0 +1,20 @@
+[
+  {
+    "id": "community-fridge",
+    "title": "Helped launch a neighborhood fridge program",
+    "year": "2025",
+    "detail": "Coordinated volunteers, wrote simple intake guidelines, and kept the spreadsheet kind."
+  },
+  {
+    "id": "zine",
+    "title": "Self-published a 24-page zine",
+    "year": "2024",
+    "detail": "Essays and film photos, saddle-stitched by hand. Sold out the first run in three weeks."
+  },
+  {
+    "id": "open-source",
+    "title": "Maintained a small open-source CLI tool",
+    "year": "2023–2026",
+    "detail": "Mostly documentation and issue triage—unsexy work that keeps software humane."
+  }
+]

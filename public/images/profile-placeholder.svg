@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="t">
+  <title id="t">Replace with your logo or photo</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#efe8dd"/>
+      <stop offset="1" stop-color="#e0d4c4"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" rx="48" fill="url(#g)"/>
+  <circle cx="200" cy="168" r="52" fill="none" stroke="#6b5344" stroke-opacity="0.35" stroke-width="3"/>
+  <path d="M120 268 Q200 220 280 268" fill="none" stroke="#6b5344" stroke-opacity="0.28" stroke-width="3" stroke-linecap="round"/>
+  <text x="200" y="348" text-anchor="middle" fill="#8b7355" font-family="Georgia, serif" font-size="18" letter-spacing="0.12em">YOUR IMAGE</text>
+</svg>

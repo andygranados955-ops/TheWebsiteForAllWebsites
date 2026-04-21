@@ -1,0 +1,22 @@
+[
+  {
+    "src": "/images/gallery/research-rig.jpg",
+    "alt": "A soft robotics setup stretching a balloon-like actuator between two hooks",
+    "caption": "Soft actuator test setup in the lab."
+  },
+  {
+    "src": "/images/gallery/churros-table.jpg",
+    "alt": "A table with churros, ice cream, pizza, Takis, and water",
+    "caption": "The breakfast of champions."
+  },
+  {
+    "src": "/images/gallery/smart-glasses.jpg",
+    "alt": "Eyeglasses with a small mounted light module on one side",
+    "caption": "My best idea yet. Prototype glasses with an attached light module."
+  },
+  {
+    "src": "/images/gallery/vanilla-candle.jpg",
+    "alt": "A brown glass candle jar labeled Paperboy Vanilla 8 oz",
+    "caption": "Desk-side vanilla candle, mood support."
+  }
+]
