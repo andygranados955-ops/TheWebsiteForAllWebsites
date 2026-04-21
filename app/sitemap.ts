@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 import { siteConfig } from "@/content/site";
-import { getEssaySlugs, getThoughtSlugs } from "@/lib/content";
+import { getEssaySlugs, getStorySlugs, getThoughtSlugs } from "@/lib/content";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/essays",
     "/thoughts",
+    "/stories",
     "/projects",
     "/interests",
     "/gallery",
@@ -36,5 +37,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...essays, ...thoughts];
+  const stories = getStorySlugs().map((slug) => ({
+    url: `${base}/stories/${slug}`,
+    lastModified: last,
+    changeFrequency: "monthly" as const,
+    priority: 0.62,
+  }));
+
+  return [...staticRoutes, ...essays, ...thoughts, ...stories];
 }

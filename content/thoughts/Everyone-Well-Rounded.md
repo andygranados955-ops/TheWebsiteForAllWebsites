@@ -1,11 +1,20 @@
 ---
-title: "Everyone should be well-rounded"
+title: "Everyone Should Be Well-Rounded"
 description: "Life is too short to be a master of one. You can also be a jack of all trades."
 date: "2026-04-20"
 ---
 
-I remember when I was applying for top 20 colleges (and was rejected from every one of them), people on the Tok and YouTube-alike would always claim that undergraduate colleges strictly looked for specialists. If you weren't really good at one specific thing, they claimed you'd be banished to the pile of rejections. 
-Whether colleges really do that, number one, you're likely a young 17-18 year old. You're not expected to be a master of anything. Number two, we only get 70-80 years if we're lucky; huge emphasis on if we're lucky. If you're not exploring fields outside of whatever you've mastered, you're missing out.
-I'm not claiming you shouldn't become a master of one specific thing. I just think we should be open to other passions. I believe that's what we call hobbies.
-Personally, I enjoy engineering and the arts. I hear people all the time claiming they can't draw to save their life. You most certainly can! People really underestimate how far practice and passion can get you. As a child, I drew "poop figures." That's what my brother claimed my drawings of people looked like. Today, I can draw poop figures but with a touch of character, and that's all you really need to create art: a touch of character and consistent practice. Apply that mentality to everything, and you'll be a person of many talents. 
+When I was applying to top-20 colleges and getting rejected by all of them, people on TikTok and YouTube kept saying undergraduate admissions only wanted specialists. If you were not exceptional at one specific thing, they said you would be sent to the rejection pile.
+
+Whether colleges truly do that or not, two points matter.
+
+First, most people applying are 17 or 18 years old; you are not expected to be a master yet.
+
+Second, we only get 70 to 80 years if we are lucky. If you never explore fields outside your main focus, you miss too much of life.
+
+I am not saying you should avoid mastery. I am saying you should stay open to other passions. That is what hobbies are for.
+
+Personally, I enjoy engineering and the arts. I hear people say all the time that they cannot draw to save their lives. You absolutely can. People underestimate how far practice and passion can take them.
+
+As a kid, I drew what my brother called "poop figures." Today I still draw poop figures but with a touch of character, and that's all you really need to create art: a touch of character and consistent practice. Apply that mentality to everything, and you'll be a person of many talents.
 

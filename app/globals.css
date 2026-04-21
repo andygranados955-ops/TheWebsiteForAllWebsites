@@ -67,8 +67,9 @@ body {
 
 .md-content p,
 .md-content li {
-  font-size: 1.0625rem;
-  line-height: 1.75;
+  font-size: clamp(1.04rem, 1.1vw, 1.14rem);
+  letter-spacing: 0.005em;
+  line-height: 1.9;
   color: color-mix(in oklab, var(--color-ink) 88%, transparent);
 }
 

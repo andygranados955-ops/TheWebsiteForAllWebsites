@@ -62,7 +62,7 @@ export function buildMetadata(
       images: [ogImage],
     },
     robots: { index: true, follow: true },
-    icons: { icon: "/icon.svg", apple: "/icon.svg" },
+    icons: { icon: "/icon.png", apple: "/icon.png" },
   };
 
   return {

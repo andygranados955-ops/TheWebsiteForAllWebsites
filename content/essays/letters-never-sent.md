@@ -1,6 +1,6 @@
 ---
-title: "How an Essay Will Look"
-description: "This will be the general format of all essays. My message to you."
+title: "How an Essay Can Look"
+description: "A quick example of the essay format and voice."
 date: "2026-01-18"
 ---
 

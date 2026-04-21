@@ -8,6 +8,7 @@ import type {
   GalleryImage,
   PostMeta,
   Project,
+  StoryFrontmatter,
   ThoughtFrontmatter,
 } from "@/lib/types";
 
@@ -26,6 +27,12 @@ export function getEssaySlugs(): string[] {
 
 export function getThoughtSlugs(): string[] {
   return readDirSafe(path.join(ROOT, "content", "thoughts")).map((f) =>
+    f.replace(/\.md$/, ""),
+  );
+}
+
+export function getStorySlugs(): string[] {
+  return readDirSafe(path.join(ROOT, "content", "stories")).map((f) =>
     f.replace(/\.md$/, ""),
   );
 }
@@ -56,6 +63,18 @@ export function getThoughtBySlug(
   };
 }
 
+export function getStoryBySlug(slug: string): PostMeta<StoryFrontmatter> | null {
+  const file = path.join(ROOT, "content", "stories", `${slug}.md`);
+  if (!fs.existsSync(file)) return null;
+  const raw = fs.readFileSync(file, "utf8");
+  const { data, content } = matter(raw);
+  return {
+    slug,
+    frontmatter: data as StoryFrontmatter,
+    content,
+  };
+}
+
 export function getAllEssays(): PostMeta<EssayFrontmatter>[] {
   return getEssaySlugs()
     .map((slug) => getEssayBySlug(slug))
@@ -66,6 +85,12 @@ export function getAllThoughts(): PostMeta<ThoughtFrontmatter>[] {
   return getThoughtSlugs()
     .map((slug) => getThoughtBySlug(slug))
     .filter(Boolean) as PostMeta<ThoughtFrontmatter>[];
+}
+
+export function getAllStories(): PostMeta<StoryFrontmatter>[] {
+  return getStorySlugs()
+    .map((slug) => getStoryBySlug(slug))
+    .filter(Boolean) as PostMeta<StoryFrontmatter>[];
 }
 
 export function getProjects(): Project[] {

@@ -60,8 +60,8 @@ export default function HomePage() {
           On this site
         </h2>
         <p className="mt-2 max-w-2xl text-[var(--color-muted)]">
-          Essays, thoughts, gallery, projects, and interests — linked from the
-          navigation and here.
+          Essays, thoughts, stories, gallery, projects, and interests — linked
+          from the navigation and here.
         </p>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {highlights.map((item) => (
@@ -102,6 +102,12 @@ export default function HomePage() {
         </Link>
         <Link
           className="rounded-full border border-[var(--color-border)] bg-[var(--color-cream)] px-4 py-2 transition-colors hover:border-[color-mix(in_oklab,var(--color-accent)_45%,transparent)]"
+          href="/stories"
+        >
+          Stories
+        </Link>
+        <Link
+          className="rounded-full border border-[var(--color-border)] bg-[var(--color-cream)] px-4 py-2 transition-colors hover:border-[color-mix(in_oklab,var(--color-accent)_45%,transparent)]"
           href="/interests"
         >
           Interests
@@ -117,6 +123,12 @@ export default function HomePage() {
           href="/thoughts"
         >
           All thoughts
+        </Link>
+        <Link
+          className="rounded-full border border-[var(--color-border)] bg-[var(--color-cream)] px-4 py-2 transition-colors hover:border-[color-mix(in_oklab,var(--color-accent)_45%,transparent)]"
+          href="/stories"
+        >
+          All stories
         </Link>
       </nav>
     </div>

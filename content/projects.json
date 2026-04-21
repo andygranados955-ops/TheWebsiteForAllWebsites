@@ -1,26 +1,20 @@
 [
   {
-    "id": "Website Business",
-    "title": "Local Website Business",
-    "year": "2026",
-    "detail": "A lot of my businesses in my area could use a website for growth and are unaware of how accessible websites are with the use of AI. With my friend, we plan to deliver high quality and secure websites for a reasonable price."
-  },
-  {
-    "id": "Candle Business",
+    "id": "candle-business",
     "title": "Starting a Candle Business",
     "year": "2025-2026",
-    "detail": "My friend majors in business, and I'm interested in seeing if we can successfully scale a relatively simple yet saturated idea. If we can master simplicity, we can scale to new heights. Because of school, we've only been able to make $100 as of April 2026, but have big plans for the summer."
+    "detail": "A friend who majors in business and I are testing whether we can scale a simple but saturated product idea."
   },
   {
-    "id": "Novel Writing",
+    "id": "novel-writing",
     "title": "Writing a trilogy based on modern events",
     "year": "2026",
-    "detail": "I don't want to disclose too much, but I'm deeply interested in writing a trilogy based on recent disturbing modern events and metaphysical concepts. One book will focus on metaphysics and another on a certain type of theory. The third may merge the two themes. I plan to self publish on Kindle."
+    "detail": "I am writing a trilogy inspired by recent events and metaphysical ideas. One book focuses on metaphysics, another on theory, and the third may merge both themes. I plan to self-publish on Kindle."
   },
   {
-    "id": "Youtube Channel",
+    "id": "youtube-channel",
     "title": "Building an education channel on YouTube",
     "year": "2026",
-    "detail": "I've met so many people who are devoting great efforts towards making education, specifically STEM education, more accessible. I will match their efforts with my brand new YouTube channel: Dr. Nibbles. As Dr. Nibbles, I plan to deliver both engaging technical education and ways to navigate academics."
+    "detail": "I have met many people working hard to make education, especially STEM, more accessible. I want to contribute through a YouTube channel focused on technical lessons and practical academic advice."
   }
 ]

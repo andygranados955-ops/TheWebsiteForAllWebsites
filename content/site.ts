@@ -2,6 +2,7 @@
  * Site-wide copy, SEO, and identity — edit this file to change most public text.
  *
  * Essays: `content/essays/*.md` (YAML `title`). Thoughts: `content/thoughts/*.md`.
+ * Stories: `content/stories/*.md`.
  * Projects: `content/projects.json`. Interests: `content/interests.json`.
  * About body: `content/about.md`.
  */
@@ -31,11 +32,11 @@ export const siteConfig = {
   locale: "en_US",
 
   /** Short line under the name on the home hero */
-  tagline: "Essays, thoughts, and projects.",
+  tagline: "Essays, thoughts, stories, and projects.",
   /** Home hero paragraph — visible; keep aligned with `seo.homeMetaDescription` themes */
   homepageIntro:
-    "I’m Andy Granados, a bioengineering student at UIUC. This is my personal site: essays, stray thoughts, pictures, and things I’m proud of, including work and writing around soft robotics and other ideas I'm interested in. This is not documentation of professional work."
-  ,bio: "Andy Granados, bioengineering at UIUC, soft robotics, writing, and personal notes. Personal website.",
+    "I’m Andy Granados, a bioengineering student at UIUC. This is my personal site for essays, thoughts, stories, pictures, and projects tied to soft robotics and the ideas I keep exploring.",
+  bio: "Andy Granados, bioengineering at UIUC, soft robotics, writing, and personal notes.",
   profileImageSrc: "/images/andy-granados.jpg",
   profileImageAlt: "Andy Granados",
   profileImageShape: "soft" as "soft" | "circle" | "square",
@@ -53,7 +54,11 @@ export const siteConfig = {
 
   /** Line under “Essays” on the essays index (envelope interaction hint) */
   essaysPageDescription:
-    "More developed and abstract thoughts",
+    "Long-form essays, shared as letters.",
+
+  /** Line under “Stories” on the stories page */
+  storiesPageDescription:
+    "Book-style cards open on hover to reveal lined pages and short fiction.",
 
   /** Line under “Projects” on the projects page — edit this text here */
   projectsPageDescription:
@@ -71,10 +76,10 @@ export const siteConfig = {
       "Andy Granados | Bioengineering at UIUC, Essays and Projects",
     /** Primary meta description for the homepage (~150–160 chars is ideal) */
     homeMetaDescription:
-      "Andy Granados personal website featuring essays, thoughts, projects, gallery photos, and contact. Bioengineering student at UIUC focused on soft robotics.",
+      "Andy Granados personal website featuring essays, thoughts, stories, projects, gallery photos, and contact. Bioengineering student at UIUC focused on soft robotics.",
     /** Default meta description when a page does not set its own */
     defaultMetaDescription:
-      "Andy Granados | Bioengineering at the University of Illinois Urbana-Champaign (UIUC). Personal site with essays, thoughts, writing, and projects.",
+      "Andy Granados | Bioengineering at the University of Illinois Urbana-Champaign (UIUC). Personal site with essays, thoughts, stories, writing, and projects.",
     /** Open Graph / social site name */
     ogSiteName: "Andy Granados",
     /** About page meta description */
@@ -85,12 +90,14 @@ export const siteConfig = {
       "Essays by Andy Granados | longer personal writing, ideas, and notes.",
     thoughtsIndexDescription:
       "Thoughts and short notes by Andy Granados.",
+    storiesIndexDescription:
+      "Stories by Andy Granados | short fiction, scenes, and narrative experiments.",
     galleryIndexDescription:
-      "Pictures and illustrations on Andy Granados’s personal website.",
+      "Pictures and visual notes on Andy Granados's personal website.",
     projectsIndexDescription:
       "Projects and milestones | Andy Granados, UIUC bioengineering and personal work.",
     interestsIndexDescription:
-      "Interests and curiosities | Andy Granados’s personal site.",
+      "Interests and curiosities | Andy Granados' personal site.",
   },
 
   /**
@@ -100,7 +107,7 @@ export const siteConfig = {
   person: {
     /** Same one-liner can appear in structured data */
     description:
-      "Andy Granados is a bioengineering student at the University of Illinois Urbana-Champaign (UIUC), interested in soft robotics. This website publishes personal essays, thoughts, and projects.",
+      "Andy Granados is a bioengineering student at the University of Illinois Urbana-Champaign (UIUC), interested in soft robotics. This website publishes personal essays, thoughts, stories, and projects.",
     jobTitle: "Student",
     affiliation: {
       name: "University of Illinois Urbana-Champaign",
@@ -137,9 +144,14 @@ export const siteConfig = {
       copy: "Short notes.",
     },
     {
+      href: "/stories",
+      title: "Stories",
+      copy: "Narrative pieces with a book-style layout.",
+    },
+    {
       href: "/gallery",
       title: "Pictures",
-      copy: "Light, texture, and evidence of being there.",
+      copy: "Photos from lab life and everyday scenes.",
     },
   ],
 } as const;

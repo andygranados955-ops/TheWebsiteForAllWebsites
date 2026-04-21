@@ -12,6 +12,13 @@ export type ThoughtFrontmatter = {
   date: string;
 };
 
+export type StoryFrontmatter = {
+  title: string;
+  description: string;
+  date: string;
+  updated?: string;
+};
+
 export type PostMeta<T> = {
   slug: string;
   frontmatter: T;

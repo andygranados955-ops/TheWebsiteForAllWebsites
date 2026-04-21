@@ -26,7 +26,7 @@ export default function ThoughtsPage() {
     <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-20">
       <SectionHeading
         eyebrow="Notebook"
-        title="Rants & thoughts"
+        title="Thoughts"
         description="Quick pieces. Less polish, more pulse."
       />
 
@@ -35,7 +35,7 @@ export default function ThoughtsPage() {
           <li key={t.slug} className="py-8">
             <Link href={`/thoughts/${t.slug}`} className="group block">
               <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
-                <h2 className="font-display text-2xl text-[var(--color-ink)] transition-colors group-hover:text-[color-mix(in_oklab,var(--color-ink)_88%,var(--color-accent))]">
+                <h2 className="font-display text-2xl leading-tight text-[var(--color-ink)] transition-colors group-hover:text-[color-mix(in_oklab,var(--color-ink)_88%,var(--color-accent))]">
                   {t.frontmatter.title}
                 </h2>
                 <time
@@ -49,7 +49,7 @@ export default function ThoughtsPage() {
                   })}
                 </time>
               </div>
-              <p className="mt-3 max-w-2xl text-[var(--color-muted)]">
+              <p className="mt-3 max-w-2xl leading-relaxed text-[var(--color-muted)]">
                 {t.frontmatter.description}
               </p>
             </Link>
