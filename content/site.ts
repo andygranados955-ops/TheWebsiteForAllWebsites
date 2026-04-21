@@ -5,11 +5,29 @@
  * Projects: `content/projects.json`. Interests: `content/interests.json`.
  * About body: `content/about.md`.
  */
+const CANONICAL_PRODUCTION_URL = "https://www.andygranados.com";
+
+function resolveSiteUrl(): string {
+  const fromEnv = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  if (fromEnv) {
+    const normalized = fromEnv.replace(/\/$/, "");
+    if (
+      process.env.NODE_ENV !== "development" &&
+      normalized.includes("localhost")
+    ) {
+      return CANONICAL_PRODUCTION_URL;
+    }
+    return normalized;
+  }
+  if (process.env.NODE_ENV === "development") return "http://localhost:3000";
+  return CANONICAL_PRODUCTION_URL;
+}
+
 export const siteConfig = {
   name: "Andy Granados",
   author: "Andy Granados",
-  /** Canonical origin — set NEXT_PUBLIC_SITE_URL in production (e.g. https://yourdomain.com) */
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  /** Canonical origin for metadata, sitemap, and robots */
+  url: resolveSiteUrl(),
   locale: "en_US",
 
   /** Short line under the name on the home hero */
@@ -49,10 +67,11 @@ export const siteConfig = {
     /** Default `<title>` suffix via template on inner pages: "Essays · …" */
     titleTemplateBrand: "Andy Granados",
     /** Homepage tab title (full string, not templated) */
-    homeDocumentTitle: "Andy Granados | Personal website",
+    homeDocumentTitle:
+      "Andy Granados | Bioengineering at UIUC, Essays and Projects",
     /** Primary meta description for the homepage (~150–160 chars is ideal) */
     homeMetaDescription:
-      "Personal website of Andy Granados: bioengineering student at UIUC, soft robotics, essays, thoughts, projects, and contact.",
+      "Andy Granados personal website featuring essays, thoughts, projects, gallery photos, and contact. Bioengineering student at UIUC focused on soft robotics.",
     /** Default meta description when a page does not set its own */
     defaultMetaDescription:
       "Andy Granados | Bioengineering at the University of Illinois Urbana-Champaign (UIUC). Personal site with essays, thoughts, writing, and projects.",
