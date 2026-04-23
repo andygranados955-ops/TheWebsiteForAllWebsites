@@ -1,5 +1,5 @@
 /**
- * Site-wide copy, SEO, and identity — edit this file to change most public text.
+ * Site-wide copy, SEO, and identity. Edit this file to change most public text.
  *
  * Essays: `content/essays/*.md` (YAML `title`). Thoughts: `content/thoughts/*.md`.
  * Stories: `content/stories/*.md`.
@@ -33,7 +33,7 @@ export const siteConfig = {
 
   /** Short line under the name on the home hero */
   tagline: "Essays, thoughts, stories, and projects.",
-  /** Home hero paragraph — visible; keep aligned with `seo.homeMetaDescription` themes */
+  /** Home hero paragraph (visible). Keep aligned with `seo.homeMetaDescription` themes. */
   homepageIntro:
     "I’m Andy Granados, a bioengineering student at UIUC. This is my personal site for essays, thoughts, stories, pictures, and projects tied to soft robotics and the ideas I keep exploring.",
   bio: "Andy Granados, bioengineering at UIUC, soft robotics, writing, and personal notes.",
@@ -43,12 +43,12 @@ export const siteConfig = {
   /** Photos usually look best with `cover`; logos with `contain` */
   profileImageFit: "cover" as "cover" | "contain",
   /**
-   * `normal` — show the file as-is (use with a white matte via `profileImageBackdrop`, or real PNG alpha).
-   * `multiply` — black line art on white, no alpha (blends into page; can look wrong if the file isn’t white-backed).
-   * `screen` — white line art on dark background, no alpha.
+   * `normal`: show the file as-is (use with a white matte via `profileImageBackdrop`, or real PNG alpha).
+   * `multiply`: black line art on white, no alpha (blends into the page; can look wrong if the file is not white-backed).
+   * `screen`: white line art on dark background, no alpha.
    */
   profileImageBlendMode: "normal" as "normal" | "screen" | "multiply",
-  /** `white` — solid white behind the image (matches JPEG line art). `transparent` — for PNG/WebP with alpha. */
+  /** `white`: solid white behind the image (matches JPEG line art). `transparent`: for PNG or WebP with alpha. */
   profileImageBackdrop: "white" as "white" | "transparent",
   profileShowPlaceholderHint: false,
 
@@ -60,12 +60,12 @@ export const siteConfig = {
   storiesPageDescription:
     "Book-style cards open on hover to reveal lined pages and short fiction.",
 
-  /** Line under “Projects” on the projects page — edit this text here */
+  /** Line under “Projects” on the projects page. Edit this text here. */
   projectsPageDescription:
     "Things I'm proud of.",
 
   /**
-   * Search & social metadata — titles, descriptions, identity for Google / OG / Twitter.
+   * Search and social metadata: titles, descriptions, identity for Google, Open Graph, and Twitter.
    * Keep phrasing natural; avoid repeating the same sentence everywhere.
    */
   seo: {
@@ -74,7 +74,7 @@ export const siteConfig = {
     /** Homepage tab title (full string, not templated) */
     homeDocumentTitle:
       "Andy Granados | Bioengineering at UIUC, Essays and Projects",
-    /** Primary meta description for the homepage (~150–160 chars is ideal) */
+    /** Primary meta description for the homepage (~150 to 160 chars is ideal) */
     homeMetaDescription:
       "Andy Granados personal website featuring essays, thoughts, stories, projects, gallery photos, and contact. Bioengineering student at UIUC focused on soft robotics.",
     /** Default meta description when a page does not set its own */
@@ -101,7 +101,7 @@ export const siteConfig = {
   },
 
   /**
-   * Person facts for JSON-LD (schema.org Person) — align with visible About page.
+   * Person facts for JSON-LD (schema.org Person). Align with visible About page.
    * Optional `social` entries add schema.org `sameAs` only (not shown in the footer).
    */
   person: {
@@ -114,7 +114,7 @@ export const siteConfig = {
       alternateName: "UIUC",
     },
     department: "Bioengineering",
-    /** Topics for schema.org knowsAbout — keep in sync with how you describe yourself on the site */
+    /** Topics for schema.org knowsAbout. Keep in sync with how you describe yourself on the site. */
     knowsAbout: [
       "Bioengineering",
       "Soft robotics",
@@ -123,7 +123,7 @@ export const siteConfig = {
     ] as const,
   },
 
-  /** Contact — email is the only link shown in the footer and colophon */
+  /** Contact: email is the only link shown in the footer and colophon */
   links: {
     email: "andygranados955@gmail.com",
   },

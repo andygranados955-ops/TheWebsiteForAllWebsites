@@ -51,7 +51,7 @@ export function buildMetadata(
           url: ogImage,
           width: 1200,
           height: 630,
-          alt: `${siteConfig.name} — personal website`,
+          alt: `${siteConfig.name} personal website`,
         },
       ],
     },
@@ -62,7 +62,6 @@ export function buildMetadata(
       images: [ogImage],
     },
     robots: { index: true, follow: true },
-    icons: { icon: "/icon.png", apple: "/icon.png" },
   };
 
   return {

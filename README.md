@@ -16,7 +16,7 @@ A warm, editorial personal site built with **Next.js (App Router)**, **TypeScrip
    npm install
    ```
 
-2. **Optional — set the public site URL** (used for SEO, Open Graph, RSS, and sitemap)
+2. **Optional:** set the public site URL (used for SEO, Open Graph, RSS, and sitemap)
 
    Create a `.env.local` file in the project root:
 
@@ -53,6 +53,7 @@ components/
 content/
   essays/*.md             # Essays (frontmatter + Markdown body)
   thoughts/*.md           # Shorter pieces
+  stories/*.md            # Short fiction
   projects.json
   interests.json
   gallery.json
@@ -71,7 +72,7 @@ public/
 
 ## Typography & palette (design notes)
 
-- **Fraunces** (display): soft, literary serif with personality—used for headings and the site name. Feels closer to a book than a dashboard.
+- **Fraunces** (display): soft, literary serif with personality, used for headings and the site name. Feels closer to a book than a dashboard.
 - **Literata** (body): designed for long reading; warm, sturdy serifs at small sizes.
 
 Colors are defined as CSS variables in `app/globals.css` (cream paper, espresso ink, terracotta accent). Adjust there for global theming.
@@ -98,13 +99,14 @@ Colors are defined as CSS variables in `app/globals.css` (cream paper, espresso 
 
 | Goal | File(s) |
 |------|---------|
-| **Identity & SEO** — titles, meta descriptions, canonical domain (`url`), person/social, homepage copy, index blurbs | `content/site.ts` |
-| **Profile / hero photo** — file path, crop, blend, matte | Put the image in `public/images/`, set `profileImageSrc` (+ optional `profileImageFit`, `profileImageBlendMode`, `profileImageBackdrop`) in `content/site.ts` |
+| **Identity & SEO:** titles, meta descriptions, canonical domain (`url`), person/social, homepage copy, index blurbs | `content/site.ts` |
+| **Profile / hero photo:** file path, crop, blend, matte | Put the image in `public/images/`, set `profileImageSrc` (+ optional `profileImageFit`, `profileImageBlendMode`, `profileImageBackdrop`) in `content/site.ts` |
 | Home page structure (sections, internal links) | `app/page.tsx` |
 | Global colors, selection, markdown article styles | `app/globals.css` |
 | Fonts | `app/layout.tsx` (Google fonts) + `app/globals.css` if you add variables |
 | Essays | Add/edit `content/essays/your-slug.md` (filename = URL slug) |
 | Thoughts | `content/thoughts/*.md` |
+| Stories | `content/stories/*.md` |
 | Projects | `content/projects.json` |
 | Interests | `content/interests.json` |
 | Gallery images & captions | `content/gallery.json` + files under `public/images/gallery/` |
@@ -134,9 +136,8 @@ Body is standard Markdown below the `---`.
 | `npm run build` | Production build |
 | `npm run start` | Serve production build locally |
 | `npm run lint` | ESLint |
+| `npm run generate:icons` | Regenerate `app/favicon.ico` and `app/icon.png` from the built-in AG mark |
 
 ## License
 
-Personal project — use and adapt freely for your own site.
-# WebsiteRepository
-# WebsiteRepository
+Personal project. Use and adapt freely for your own site.

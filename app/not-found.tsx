@@ -10,7 +10,7 @@ export default function NotFound() {
         This page wandered off.
       </h1>
       <p className="mt-4 text-lg text-[var(--color-muted)]">
-        Nothing here—just quiet floorboards and an empty chair.
+        Nothing here, just quiet floorboards and an empty chair.
       </p>
       <Link
         className="mt-10 rounded-full border border-[var(--color-border)] bg-[var(--color-paper)] px-5 py-2 text-sm text-[var(--color-ink)] transition-colors hover:border-[color-mix(in_oklab,var(--color-accent)_45%,transparent)]"

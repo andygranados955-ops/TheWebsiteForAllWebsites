@@ -60,7 +60,7 @@ export default function HomePage() {
           On this site
         </h2>
         <p className="mt-2 max-w-2xl text-[var(--color-muted)]">
-          Essays, thoughts, stories, gallery, projects, and interests — linked
+          Essays, thoughts, stories, gallery, projects, and interests, linked
           from the navigation and here.
         </p>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

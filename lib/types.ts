@@ -2,7 +2,7 @@ export type EssayFrontmatter = {
   title: string;
   description: string;
   date: string;
-  /** Optional — shown on detail page */
+  /** Optional, shown on detail page */
   updated?: string;
 };
 

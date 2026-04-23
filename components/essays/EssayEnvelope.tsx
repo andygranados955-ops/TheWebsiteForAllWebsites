@@ -50,7 +50,7 @@ function LetterSheet() {
  *          └─ .face [overflow:hidden; clips everything; perspective for flap only]
  *               1) .layer-back
  *               2) .layer-letter (motion; translateY 0 at rest)
- *               3) .layer-pocket (single lower rectangle — no side segments)
+ *               3) .layer-pocket (single lower rectangle, no side segments)
  *               4) .layer-flap (motion; rotateX 0 at rest)
  *
  * Layer order (back → front): back (1) → letter (10) → pocket (20) → flap (30).
@@ -58,7 +58,7 @@ function LetterSheet() {
  * Closed transforms: flap rotateX = 0; letter translateY = 0 (no pre-offset).
  * Hover transforms: flap rotateX = -72deg (large, unmistakable); letter translateY = -82% of its height after delay.
  *
- * Airtight closed: face clips; letter anchored bottom, height ~48%, top ~52% — fully under pocket (from 47%) and under closed flap; no box-shadow on letter at rest.
+ * Airtight closed: face clips; letter anchored bottom, height ~48%, top ~52%, fully under pocket (from 47%) and under closed flap; no box-shadow on letter at rest.
  */
 export function EssayEnvelope({ slug, title, description, date }: Props) {
   const reduce = useReducedMotion();
@@ -99,18 +99,18 @@ export function EssayEnvelope({ slug, title, description, date }: Props) {
             aria-hidden
           />
 
-          {/* Outer rectangular card: overflow clips all layers — nothing protrudes in rest */}
+          {/* Outer rectangular card: overflow clips all layers; nothing protrudes at rest */}
           <div
             className="relative z-[1] aspect-[2/1] w-full overflow-hidden rounded-xl border border-[color-mix(in_oklab,var(--color-ink)_11%,transparent)] bg-[#cfc0ae] shadow-[0_12px_28px_rgba(42,33,24,0.11)]"
             style={{ perspective: "1100px" }}
           >
-            {/* Layer 1 — envelope back */}
+            {/* Layer 1: envelope back */}
             <div
               className="absolute inset-0 z-[1] bg-gradient-to-b from-[#ebe3d7] to-[#d4c8ba]"
               aria-hidden
             />
 
-            {/* Layer 2 — letter: between back and pocket; rest = no transform; fully hidden behind pocket + flap */}
+            {/* Layer 2: letter between back and pocket; rest = no transform; fully hidden behind pocket + flap */}
             <motion.div
               className="absolute bottom-0 z-[10] overflow-hidden rounded-[1px] border border-[color-mix(in_oklab,var(--color-ink)_08%,transparent)] bg-[#f8f6f1]"
               style={{
@@ -134,13 +134,13 @@ export function EssayEnvelope({ slug, title, description, date }: Props) {
               <LetterSheet />
             </motion.div>
 
-            {/* Layer 3 — single front pocket / lower body (no side wings, no curved V) */}
+            {/* Layer 3: single front pocket / lower body (no side wings, no curved V) */}
             <div
               className="pointer-events-none absolute inset-x-0 bottom-0 top-[47%] z-[20] border-t border-[color-mix(in_oklab,var(--color-ink)_10%,transparent)] bg-gradient-to-b from-[#c9b8a6] to-[#a89882] shadow-[inset_0_8px_16px_rgba(42,33,24,0.1)]"
               aria-hidden
             />
 
-            {/* Layer 4 — top flap: hinge at top; rest rotateX 0 (flat closed); hover opens wide */}
+            {/* Layer 4: top flap hinge at top; rest rotateX 0 (flat closed); hover opens wide */}
             <motion.div
               className="absolute inset-x-0 top-0 z-[30] h-[50%] will-change-transform"
               style={{

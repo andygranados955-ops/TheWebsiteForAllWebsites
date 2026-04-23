@@ -27,7 +27,7 @@ function innerShape(shape: (typeof siteConfig)["profileImageShape"]) {
 }
 
 /**
- * Hero portrait / logo — path and mask from `content/site.ts`.
+ * Hero portrait / logo. Path and mask from `content/site.ts`.
  */
 export function HeroPortrait() {
   const {
@@ -79,7 +79,7 @@ export function HeroPortrait() {
         </div>
         {profileShowPlaceholderHint ? (
           <figcaption className="mt-3 text-center text-[0.7rem] leading-snug text-[var(--color-muted)] lg:text-left">
-            Placeholder — set{" "}
+            Placeholder: set{" "}
             <code className="whitespace-nowrap rounded bg-[var(--color-paper)] px-1 py-0.5 font-mono text-[0.65rem] text-[var(--color-ink)]">
               profileImageSrc
             </code>{" "}

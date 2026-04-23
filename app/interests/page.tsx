@@ -25,7 +25,7 @@ export default function InterestsPage() {
       <SectionHeading
         eyebrow="Curiosities"
         title="Interests"
-        description="A living list—more compass than catalog."
+        description="A living list, more compass than catalog."
       />
 
       <div className="grid gap-8 sm:grid-cols-2">
