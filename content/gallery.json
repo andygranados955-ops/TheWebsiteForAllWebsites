@@ -18,5 +18,15 @@
     "src": "/images/gallery/vanilla-candle.jpg",
     "alt": "A brown glass candle jar labeled Paperboy Vanilla 8 oz",
     "caption": "Desk-side vanilla candle, mood support."
+  },
+  {
+    "src": "/images/gallery/ginger-bread.jpeg",
+    "alt": "A gingerbread house with a M&M's",
+    "caption": "I made this gingerbread house with my team at my High School for a competition. And YES, we lost."
+  },
+  {
+    "src": "/images/gallery/chicago.jpeg",
+    "alt": "A picture of Chicago at night overseeing a river",
+    "caption": "This is a very, very warm picture of Chicago at night"
   }
 ]
