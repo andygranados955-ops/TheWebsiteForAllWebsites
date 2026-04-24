@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { SafeMarkdown } from "@/components/content/SafeMarkdown";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { getAllStories, getStoryBySlug } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
 
@@ -40,6 +41,13 @@ export default async function StoryPage({ params }: Props) {
 
   return (
     <article className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-20">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Stories", path: "/stories" },
+          { name: story.frontmatter.title, path: `/stories/${slug}` },
+        ]}
+      />
       <Link
         href="/stories"
         className="text-sm text-[var(--color-muted)] transition-colors hover:text-[var(--color-ink)]"

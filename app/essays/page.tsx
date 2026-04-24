@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { EssayEnvelope } from "@/components/essays/EssayEnvelope";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { siteConfig } from "@/content/site";
 import { getAllEssays } from "@/lib/content";
@@ -24,6 +25,12 @@ export default function EssaysPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-20">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Essays", path: "/essays" },
+        ]}
+      />
       <SectionHeading
         eyebrow="Writing"
         title="Essays"

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { siteConfig } from "@/content/site";
 import { getInterests } from "@/lib/content";
@@ -22,6 +23,12 @@ export default function InterestsPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-20">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Interests", path: "/interests" },
+        ]}
+      />
       <SectionHeading
         eyebrow="Curiosities"
         title="Interests"

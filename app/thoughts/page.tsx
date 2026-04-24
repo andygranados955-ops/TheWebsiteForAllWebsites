@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { siteConfig } from "@/content/site";
 import { getAllThoughts } from "@/lib/content";
@@ -24,6 +25,12 @@ export default function ThoughtsPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-20">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Thoughts", path: "/thoughts" },
+        ]}
+      />
       <SectionHeading
         eyebrow="Notebook"
         title="Thoughts"

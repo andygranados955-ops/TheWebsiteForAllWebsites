@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { StoryBookCard } from "@/components/stories/StoryBookCard";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { siteConfig } from "@/content/site";
@@ -24,6 +25,12 @@ export default function StoriesPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-20">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Stories", path: "/stories" },
+        ]}
+      />
       <SectionHeading
         eyebrow="Fiction shelf"
         title="Stories"

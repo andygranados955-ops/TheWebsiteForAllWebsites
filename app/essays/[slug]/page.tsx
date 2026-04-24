@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { SafeMarkdown } from "@/components/content/SafeMarkdown";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { getAllEssays, getEssayBySlug } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
 
@@ -39,6 +40,13 @@ export default async function EssayPage({ params }: Props) {
 
   return (
     <article className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-20">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Essays", path: "/essays" },
+          { name: essay.frontmatter.title, path: `/essays/${slug}` },
+        ]}
+      />
       <Link
         href="/essays"
         className="text-sm text-[var(--color-muted)] transition-colors hover:text-[var(--color-ink)]"

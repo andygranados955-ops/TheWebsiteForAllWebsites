@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { SafeMarkdown } from "@/components/content/SafeMarkdown";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { getAllThoughts, getThoughtBySlug } from "@/lib/content";
 import { buildMetadata } from "@/lib/seo";
 
@@ -38,6 +39,13 @@ export default async function ThoughtPage({ params }: Props) {
 
   return (
     <article className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-20">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Thoughts", path: "/thoughts" },
+          { name: thought.frontmatter.title, path: `/thoughts/${slug}` },
+        ]}
+      />
       <Link
         href="/thoughts"
         className="text-sm text-[var(--color-muted)] transition-colors hover:text-[var(--color-ink)]"

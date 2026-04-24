@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { SafeMarkdown } from "@/components/content/SafeMarkdown";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { siteConfig } from "@/content/site";
@@ -23,6 +24,12 @@ export default function AboutPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-20">
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "About", path: "/about" },
+        ]}
+      />
       <SectionHeading
         eyebrow="Hello"
         title="About Andy Granados"

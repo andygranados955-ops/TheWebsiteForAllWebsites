@@ -69,3 +69,26 @@ export function getPersonWebsiteJsonLd(): Record<string, unknown> {
     "@graph": [website, person],
   };
 }
+
+type BreadcrumbItem = {
+  name: string;
+  path: string;
+};
+
+/**
+ * schema.org BreadcrumbList for any page path hierarchy.
+ * Example: Home -> Essays -> Essay Title.
+ */
+export function getBreadcrumbJsonLd(items: BreadcrumbItem[]): Record<string, unknown> {
+  const base = siteConfig.url.replace(/\/$/, "");
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, idx) => ({
+      "@type": "ListItem",
+      position: idx + 1,
+      name: item.name,
+      item: `${base}${item.path.startsWith("/") ? item.path : `/${item.path}`}`,
+    })),
+  };
+}
