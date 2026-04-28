@@ -4,7 +4,7 @@ description: "Life is too short to be a master of one. You can also be a jack of
 date: "2026-04-20"
 ---
 
-When I was applying to top-20 colleges and getting rejected by all of them, people on TikTok and YouTube kept saying undergraduate admissions only wanted specialists. If you were not exceptional at one specific thing, they said you would be sent to the rejection pile.
+When I was applying to top-20 colleges and getting rejected by all of them, people on the Tok and YouTube kept saying undergraduate admissions only wanted specialists. If you were not exceptional at one specific thing, they said you would be sent to the rejection pile.
 
 Whether colleges truly do that or not, two points matter.
 

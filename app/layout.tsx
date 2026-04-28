@@ -19,7 +19,17 @@ const fontBody = Literata({
   display: "swap",
 });
 
-export const metadata: Metadata = buildMetadata();
+export const metadata: Metadata = {
+  ...buildMetadata(),
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: ["/favicon.ico"],
+  },
+};
 
 export const viewport: Viewport = {
   themeColor: "#f7f2ea",

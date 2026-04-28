@@ -28,5 +28,10 @@
     "src": "/images/gallery/chicago.jpeg",
     "alt": "A picture of Chicago at night overseeing a river",
     "caption": "This is a very, very warm and blurry picture of Chicago at night"
+  },
+  {
+    "src": "/images/gallery/urbana-houses.jpeg",
+    "alt": "A picture of Urbana houses at night",
+    "caption": "The houses in Urbana are so unique; I'd live here for sure"
   }
 ]
