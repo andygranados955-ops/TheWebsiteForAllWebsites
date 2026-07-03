@@ -54,11 +54,11 @@ export const siteConfig = {
 
   /** Line under “Essays” on the essays index (envelope interaction hint) */
   essaysPageDescription:
-    "Long-form essays, shared as letters.",
+    "Open on hover for long-form essays, shared as letters.",
 
   /** Line under “Stories” on the stories page */
   storiesPageDescription:
-    "Book-style cards open on hover to reveal lined pages and short fiction.",
+    "Open on hover to reveal personal stories.",
 
   /** Line under “Projects” on the projects page. Edit this text here. */
   projectsPageDescription:

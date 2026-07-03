@@ -1,7 +1,7 @@
 ---
 title: "Evil Sunscreen"
 description: "It changed my complexion"
-date: "2026-04-26"
+date: "2026-05-26"
 ---
 I have a bone to pick with white-cast sunscreen.
 
