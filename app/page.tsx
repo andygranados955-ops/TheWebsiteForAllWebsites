@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { HeroPortrait } from "@/components/home/HeroPortrait";
+import { RecentUploads } from "@/components/home/RecentUploads";
 import { siteConfig } from "@/content/site";
+import { getRecentUploads } from "@/lib/recent";
 import { buildMetadata, canonicalUrl } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata(
@@ -24,6 +26,7 @@ export const metadata: Metadata = buildMetadata(
 
 export default function HomePage() {
   const highlights = siteConfig.homeHighlights;
+  const recentUploads = getRecentUploads();
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-24">
@@ -51,6 +54,8 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+
+      <RecentUploads items={recentUploads} />
 
       <section className="mt-16" aria-labelledby="explore-heading">
         <h2
