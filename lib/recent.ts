@@ -26,6 +26,12 @@ export function getRecentUploadLabel(kind: RecentUploadKind): string {
   return kindLabels[kind];
 }
 
+const pathByKind: Record<RecentUploadKind, string> = {
+  essay: "essays",
+  thought: "thoughts",
+  story: "stories",
+};
+
 function toRecentUpload(
   kind: RecentUploadKind,
   slug: string,
@@ -33,14 +39,13 @@ function toRecentUpload(
   description: string,
   date: string,
 ): RecentUpload {
-  const base = kind === "essay" ? "essays" : `${kind}s`;
   return {
     kind,
     slug,
     title,
     description,
     date,
-    href: `/${base}/${slug}`,
+    href: `/${pathByKind[kind]}/${slug}`,
   };
 }
 
