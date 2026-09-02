@@ -1,6 +1,6 @@
 ---
 title: My Journaling Journey
-description: "We don't talk about dreams enough"
+description: Dear diary, today I was a bum
 date: 2026-09-2
 ---
 
