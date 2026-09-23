@@ -33,5 +33,20 @@
     "src": "/images/gallery/urbana-houses.jpeg",
     "alt": "A picture of Urbana houses at night",
     "caption": "The houses in Urbana are so unique; I'd live here for sure"
+  },
+  {
+    "src": "/images/gallery/flying.jpeg",
+    "alt": "A picture of a plane window with a view of the sky",
+    "caption": "When I went to North Carolina to be trained by researchers"
+  },
+  {
+    "src":"/images/gallery/picklesalt.jpeg",
+    "alt": "A picture of pickle salt",
+    "caption": "1$ pickle salt from Walgreens for Grinch fries"
+  },
+  {
+    "src": "/images/gallery/pubert.jpeg",
+    "alt": "A picture of a teddy bear",
+    "caption": "My favorite teddy bear, Pubert"
   }
 ]
