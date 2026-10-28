@@ -4,8 +4,7 @@ title: "Talking Butter"
 
 description: "A horrifying linear algebra experience that turned into an existential crisis."
 
-date: 2026-10-28
-
+date: "2026-10-28"
 ---
 
 
